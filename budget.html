@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- add the nav bar -->
+    <header class="showcase">
+    <div class="container">
+       <!-- create a nav bar that shows different pages for tracking your budget and your spending history  -->
+       <nav>
+           <!-- create a logo for your budget tracker  -->
+       <hi class="logo">my logo</hi>
+           <ul>
+               <li><a href='index.html'>home</a></li>
+               <li><a href='budget.html'>budget</a></li>
+               <li><a href='history.html'>history</a></li>
+           </ul>
+       </nav>
+    </div>
+     <!-- add current budget display -->
+      <div class="container">
+        <div class="budget-display">current budget:</div>
+        <form id="#">
+            <div class="inquiries">
+            <!-- add a add/substact from budget input -->
+             <div class="input-box">
+                <span class="entry-details">add/takeout budget</span>
+                <input type="text" placeholder="enter the amount" required>
+                <!-- add add a switch that would dictate if the above input was adding or taking away from the budget -->
+             </div>
+        </div>
+        
+        <!-- add a desription of why your adding or subtracting from your budget -->
+        <div class="input-box">
+            <span class="details">please give a short description </span>
+            <input type="text" placeholder="enter description" required>
+        </div>
+        <!-- add whether   this is recurring weekly monthly yearly or not recurring at all-->
+        <div class="input-box">
+            <span class="radio-details">is this a recurring action </span>
+            <input type="radio"  required>
+        </div>
+        <!-- add a add to tracker button -->
+    </form>
+    <!-- display last transactions  -->
+        </div>
+    
+</body>
+</html>

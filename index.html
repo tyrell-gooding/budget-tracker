@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- create a header that includes your nav bar and logo  -->
+    <header class="showcase">
+     <div class="container">
+        <!-- create a nav bar that shows different pages for tracking your budget and your spending history  -->
+        <nav>
+            <!-- create a logo for your budget tracker  -->
+        <h1 class="logo">S.M.A.R.T. wallet</h1>
+            <ul>
+                <li><a href='index.html'>home</a></li>
+                <li><a href='budget.html'>budget</a></li>
+                <li><a href='history.html'>history</a></li>
+            </ul>
+        </nav>
+     </div>
+    </header>
+<!-- use a hero image to grab the attention of the user something funny they can relate to -->
+     <div class="hero">
+
+     </div>
+     <Div class="container">
+        <!-- explain what smart wall is inside the h2 tags -->
+        <div class="smart-wallet">
+            <h2 class="smart">
+               s: specific itemized funding.
+               m: measuring how far we can stretch your funds.
+               a: attainable assets and good spending.
+               r: realistic spending options.
+               t: time frame of when you can spend.
+            </h2>
+           
+        </div>
+     </Div>
+
+     <!-- create an container to give basic information to the user about why they should use a budget -->
+     <Div class="container">
+        <div class="why-budget">
+            <h2 class="why">Why should I create a budget? A budget is a guide that keeps you on the path to reach your financial goals Budgeting keeps your finances under control, shows when you need to make adjustments to your spending, and helps you decide where your money goes instead of wondering where it all went.
+            </h2>
+            
+        </div>
+     </Div>
+     <!-- create a basic footer for the your budget tracker -->
+       <!-- add current budget display -->
+       <div class="form-wrapper">
+        <div class="budget-display">current budget:</div>
+        <form id="budgetform">
+            <div class="inquiries">
+            <!-- add a add/substact from budget input -->
+             <div class="input-box">
+                <label class="entry-details" for="amount">add/takeout budget</label>
+                <input type="text" id="amount" placeholder="enter the amount" required>
+                <!-- add add a switch that would dictate if the above input was adding or taking away from the budget -->
+                 
+                    <select id="transactionType">
+                        <option value="budget">budget</option>
+                        <option value="income">income</option>
+                        <option value="expense">expense</option>
+                        
+                    </select>
+                 
+             </div>
+        </div>
+        
+        <!-- add a desription of why your adding or subtracting from your budget -->
+        <div class="input-box">
+            <label  for='budgetdescription'class="details">please give a short description </label>
+            <input  id="budgetdescription" type="text" placeholder="enter description" required>
+        </div>
+        <!-- add whether   this is recurring weekly monthly yearly or not recurring at all-->
+        <div class="input-box">
+            <p>is this a recurring action?</p>
+            <label for="radio-details-nr">not recurring</label>
+            <input name='source' id="radio-details-nr" type="radio" value="notRecurring">
+            <label for="radio-details-month">monthly</label>
+            <input name='source' id="radio-details-month" type="radio" value="monthly">
+            <label for="radio-details-year">yearly</label>
+            <input name='source' id="radio-details-year" type="radio" value="yearly">
+            <label for="radio-details-week">weekly</label>
+            <input name='source' id="radio-details-week" type="radio" value="weekly">
+        </div>
+        <!-- add a add to tracker button -->
+        <div class="input-box">
+            <span class="source-details">where is this source coming from/going to?</span>
+            <select id="source">
+                <option value="job">job</option>
+                <option value="bank">bank</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <div class="button">
+            <input type="submit" value="complete transactions">
+        </div>
+    </form>
+    <button onClick="viewBudget()">view budget</button>
+    <!-- display last transactions  -->
+     <div class="display">
+        
+    <!-- display current balance -->
+       <!-- create a table with columns that show your weekly monthly and annualy spending also a column for non recurring expenses could just be called daily exspenses -->
+        <section>
+            <h1>expenses</h1>
+            <section class="expensesGrid"></section>
+        </section>
+        <section>
+            <h1>income</h1>
+            <section class="incomeGrid"></section>
+        </section>
+        <section>
+            <h1>your budget</h1>
+            <section class="budgetGrid"></section>
+        </section>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import 'main';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@mixin gradient($firstcolor, $secondcolor, $thirdcolor ) {
+    background: linear-gradient($firstcolor, $secondcolor, $thirdcolor );
+    
+  }
+body {
+    @include gradient($primary-color, $secondary-color, $complimentary-color) ;
+    height: 1500px;
+}
+
+.showcase {
+    background-color: black;
+    color: $primary-color;
+    height: 150px;
+    
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        ul {
+            display: flex;
+            
+            list-style-type: none;
+           
+            margin: 5px;
+        }
+
+        li {
+            text-decoration: none;
+            padding: 15px;
+            color: $secondary-color;
+            margin: 5px;
+            font-size: 16px;
+           
+
+        }
+
+        a:hover {
+            color: $secondary-color;
+        }
+
+    }
+    a {
+        color: $complimentary-color;
+    }
+
+    
+}
+
+.container {
+max-width: 1100px;
+padding: 0 30px;
+margin: 0 auto;
+overflow: hidden;
+
+
+}
+
+.smart-wallet {
+    display: flex;
+    background-color: $primary-color;
+    padding: 15px;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+    justify-content: space-around;
+    font-weight: 300;
+
+    h2 .smart {
+        align-items: end;
+    
+    }
+  
+}
+
+.why-budget {
+    display: flex;
+    background-color: $secondary-color;
+    padding: 15px;
+    align-items: center;
+    margin: 0 auto;
+    height: 200px;
+    justify-content: space-around;
+    font-weight: 300;
+
+    // h2 .why {
+
+    // }
+}
+
+.form-wrapper {
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+    background: $secondary-color;
+    padding: 25px 30px;
+    border-radius:  5px;
+
+    .budget-display{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+
+    }
+    .budget-display, .inquiries, .input-box  .button {
+        margin: 1rem;
+        p{
+            margin: 1rem;
+        }
+    }
+
+    
+    
+
+}
+
+.display        {
+    align-items: center;
+        
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+
+}
